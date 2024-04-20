@@ -15,7 +15,7 @@ bf = cv.BFMatcher()
 
 #im2, contours = cv.findContours(img2, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
 edged = cv.Canny(img2, 50, 400) 
-cv.waitKey(0) 
+# cv.waitKey(0) 
   
 # Finding Contours 
 # Use a copy of the image e.g. edged.copy() 
@@ -28,8 +28,8 @@ contours = sorted(contours, key=lambda x: cv.boundingRect(x)[2] * cv.boundingRec
 x_max, y_max, w_max, h_max = cv.boundingRect(contours[0])
 
   
-cv.imshow('Canny Edges After Contouring', edged) 
-cv.waitKey(0) 
+# cv.imshow('Canny Edges After Contouring', edged) 
+# cv.waitKey(0) 
 
 cv.drawContours(img2, [contours[0]], -1, (0, 255, 0), 2)
 
@@ -65,11 +65,19 @@ for contour in contours:
                 good_amarelo.append([m])
             
 
-print('Amarelo: ' + str(len(good_amarelo)))
-print('Azul: ' + str(len(good_azul)))
-print('Verde: ' + str(len(good_verde)))    
+# print('Amarelo: ' + str(len(good_amarelo)))
+# print('Azul: ' + str(len(good_azul)))
+# print('Verde: ' + str(len(good_verde)))    
 
-  
-cv.imshow('Contours', img2) 
-cv.waitKey(0) 
+results = []
+results.append(len(good_amarelo))
+results.append(len(good_azul))
+results.append(len(good_verde))
+
+decision = max(results)
+
+print(str(decision))
+           
+# cv.imshow('Contours', img2) 
+# cv.waitKey(0) 
 
