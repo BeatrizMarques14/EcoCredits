@@ -4,6 +4,8 @@ import axios from 'axios';
 import "../../App.css";
 
 
+
+
 import Footer from "../Footer";
 
 function Home (){
@@ -18,6 +20,7 @@ return(
       <div id="resposta"> {result && <p>Resultado: {result}</p>}</div>
 
     </div>
+      
 
 <Footer/>
 </>

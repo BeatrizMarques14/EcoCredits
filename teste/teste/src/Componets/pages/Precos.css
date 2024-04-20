@@ -1,32 +1,68 @@
-.imageQS-container {
+.tabela{
+  display: flex;
+  justify-content: center;
 
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
-  }
+}
 
-  .imageQS-container > h1 {
-    color: #fff;
-    font-size: 100px;
-    margin-top: -100px;
-  }
-  
-  .imageQS-container > p {
-    margin-top: 8px;
-    color: #fff;
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
-  }
-  
-  .map-container {
-    text-align: center;
-    margin-top: 100px; /* Adicionando margem superior */
-    margin-bottom: 20px;
-  }
+table, th, td{
+  border: 1px solid rgb(21, 65, 51);
+  border-collapse: collapse;
+}
 
+table{
+  width: 1000px;
+  margin: 20px 0px;
+  box-shadow: inset 0 0 0 1000px rgb(68, 184, 103);
+}
+
+th{
+  background-color: rgba(39, 105, 85);
+  color: white;
+}
+
+th, td{
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilizando o elemento h1 */
+h1 {
+  color: rgba(39, 105, 85); /* Cor do texto */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte (negrito) */
+  margin-top: 10px;
+  margin-bottom: 10px; /* Margem inferior */
+  text-align: center;
+}
+
+/* Estilizando o elemento h2 */
+h2 {
+  color: rgba(39, 105, 85); /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte (negrito) */
+  margin-top: 20px; /* Margem superior */
+  margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilizando o elemento p */
+p {
+  color: rgba(39, 105, 85); /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 1.5; /* Altura da linha */
+  margin-bottom: 20px; /* Margem inferior */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaços extras ao redor da imagem */
+  margin: 20px auto; /* Adiciona margem superior e inferior de 20 pixels e centraliza horizontalmente */
+}
