@@ -5,7 +5,7 @@ import glob
 
 # read images
 
-img2 = cv.imread('./testes/teste1.jpg',cv.IMREAD_GRAYSCALE) 
+img2 = cv.imread('./testes/teste3.jpg',cv.IMREAD_GRAYSCALE) 
 
  
 imgs_azul = sorted(glob.glob('./azul/rotulo*.jpg'))
