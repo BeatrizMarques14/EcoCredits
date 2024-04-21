@@ -1,0 +1,30 @@
+/* Estilizando o contêiner principal */
+.Appp {
+    display: flex; /* Para alinhar os elementos horizontalmente */
+    align-items: center; /* Alinhar verticalmente */
+}
+
+/* Estilizando o botão */
+#meuBotao {
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+#meuBotao:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilizando a caixa de texto ao lado */
+#resposta {
+    margin-left: 20px; /* Espaçamento à esquerda */
+}
+
+#resposta p {
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}

@@ -31,9 +31,9 @@ contours = sorted(contours, key=lambda x: cv.boundingRect(x)[2] * cv.boundingRec
 #get the biggest contour's size
 x_max, y_max, w_max, h_max = cv.boundingRect(contours[0])
 
-# cv.namedWindow('Imagem', cv.WINDOW_NORMAL)
-# cv.imshow('Imagem', edged) 
-# cv.waitKey(0) 
+ #cv.namedWindow('Imagem', cv.WINDOW_NORMAL)
+ #cv.imshow('Imagem', img2) 
+ #cv.waitKey(0) 
 
 # draws the contours
 cv.drawContours(img2, contours, -1, (0, 255, 0), 2)

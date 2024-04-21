@@ -20,26 +20,22 @@ function Precos(){
                     </tr>
                     <tr>
                         <td>Amarelo</td>
-                        <td>5</td>
+                        <td>2</td>
                         
                     </tr>
                     <tr>
                         <td>Verde</td>
-                        <td>4</td>
+                        <td>5</td>
                         
                     </tr>
                     <tr>
                         <td>Azul</td>
-                        <td>2</td>
+                        <td>3</td>
                         
                     </tr>
                 </table>
             </div>
-            <div class="container">
-        
-            <h1>colocar imagem</h1>
-        
-    </div>
+            
       <Footer/>
     </>
   );
